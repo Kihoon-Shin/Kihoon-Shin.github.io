@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: post
 title: About
-permalink: /about/
 ---
 
-Another minimal style of Jekyll theme for writers.
+This is an example page!
+
+Actually, it has the same layout of a post...
