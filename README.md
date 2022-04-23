@@ -1,151 +1,274 @@
-## moonwalk - a fast and minimalistic blog theme with clean dark mode
+# [Minimal Mistakes Jekyll theme](https://mmistakes.github.io/minimal-mistakes/)
 
-<img src="https://raw.githubusercontent.com/abhinavs/moonwalk/master/_screenshots/moonwalk.png" />
+[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/LICENSE)
+[![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.7-blue.svg)](https://jekyllrb.com/)
+[![Ruby gem](https://img.shields.io/gem/v/minimal-mistakes-jekyll.svg)](https://rubygems.org/gems/minimal-mistakes-jekyll)
+[![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip%20me-green.svg?logo=paypal)](https://www.paypal.me/mmistakes)
+[![Donate to this project using Buy Me A Coffee](https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow.svg)](https://www.buymeacoffee.com/mmistakes)
 
-<h3 align="center">
-  <img src="https://raw.githubusercontent.com/abhinavs/moonwalk/master/logo.png" width="24"/>
-<a href="https://abhinavs.github.io/moonwalk/">TRY THE DEMO</a>
-</h3>
+Minimal Mistakes is a flexible two-column Jekyll theme, perfect for building personal sites, blogs, and portfolios. As the name implies, styling is purposely minimalistic to be enhanced and customized by you :smile:.
 
-## Features
-* Light & dark mode with theme switcher
-* Vertical list, horizontal list, card list
-* Landing page with navbar, footer, portfolio
-* Fast (very minimal CSS) - 100/100 on performance, accessibility, best practices and SEO, please see [Lighthouse Report](https://raw.githubusercontent.com/abhinavs/moonwalk/master/_screenshots/lighthouse-report.png) for more details
-* Responsive and mobile friendly
-* SEO optimized (uses [Jekyll Soopr SEO Tag](https://github.com/jekyll/jekyll-soopr-seo-tag))
-* RSS feed (uses [Jekyll Feed](https://github.com/jekyll/jekyll-feed))
-* Easy to extend
-* Fully compatible with [GitHub Pages](https://pages.github.com/) (see [GitHub Pages installation](#github-pages-installation))
-* Auto-generated share images for social media (using [Soopr](https://www.soopr.co))
-* Share & like buttons (using [Soopr](https://www.soopr.co))
+:sparkles: See what's new in the [CHANGELOG](CHANGELOG.md).
 
+**If you enjoy this theme, please consider sponsoring:**
 
-#### Lighthouse
+[!["Buy Me A Coffee"](https://user-images.githubusercontent.com/1376749/120938564-50c59780-c6e1-11eb-814f-22a0399623c5.png)](https://www.buymeacoffee.com/mmistakes)
+ [![Support via PayPal](https://cdn.jsdelivr.net/gh/twolfson/paypal-github-button@1.0.0/dist/button.svg)](https://www.paypal.me/mmistakes)
 
-<img src="https://raw.githubusercontent.com/abhinavs/moonwalk/master/_screenshots/lighthouse-report.png" />
+**Note:** The theme uses the [jekyll-include-cache](https://github.com/benbalter/jekyll-include-cache) plugin which will need to be installed in your `Gemfile` and must be retained in the `plugins` array of `_config.yml`. Otherwise you'll encounter `Unknown tag 'include_cached'` errors at build.
 
-## Quick Installation
-1. [Fork this repository](https://github.com/abhinavs/moonwalk/fork).
-2. `cd moonwalk`
-3. `bin/bootstrap`
-4. [Optional] Sign up on Soopr, and add your `publish_token` in `_config.yml` file.
+[![Minimal Mistakes live preview][2]][1]
 
-If you are installing Moonwalk on Windows, please note that you might have to use Ruby 3.0.x instead of Ruby 3.1.x - you can see Windows specific installation instructions [here](https://github.com/abhinavs/moonwalk/blob/master/moonwalk_on_windows.md)
+[1]: https://mmistakes.github.io/minimal-mistakes/
+[2]: screenshot.png (live preview)
 
-## Starting Server
-`bin/start` - development server will start at http://127.0.0.1:4000
+![layout examples](screenshot-layouts.png)
 
-## Deployment
-Moonwalk can be easily deployed on all the cloud providers (AWS etc.), and on static website hosting services like Netlify & Vercel. You can also use this button to do one click deploy
-<br />
-<br />
-[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/abhinavs/moonwalk)
+## Notable features
 
-If you want to use Moonwalk as a gem or use Github Pages, please see [this page](https://github.com/abhinavs/moonwalk/blob/master/github_pages.md)
+- Bundled as a "theme gem" for easier installation/upgrading.
+- Compatible with GitHub Pages.
+- Support for Jekyll's built-in Sass/SCSS preprocessor.
+- Nine different skins (color variations).
+- Several responsive layout options (single, archive index, search, splash, and paginated home page).
+- Optimized for search engines with support for [Twitter Cards](https://dev.twitter.com/cards/overview) and [Open Graph](http://ogp.me/) data.
+- Optional [header images](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#headers), [custom sidebars](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#sidebars), [table of contents](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#table-of-contents), [galleries](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#gallery), related posts, [breadcrumb links](https://mmistakes.github.io/minimal-mistakes/docs/configuration/#breadcrumb-navigation-beta), [navigation lists](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#navigation-list), and more.
+- Commenting support (powered by [Disqus](https://disqus.com/), [Facebook](https://developers.facebook.com/docs/plugins/comments), Google+, [Discourse](https://www.discourse.org/), static-based via [Staticman](https://staticman.net/), [utterances](https://utteranc.es/), and [giscus](https://giscus.app/)).
+- [Google Analytics](https://www.google.com/analytics/) support.
+- UI localized text in English (default), Arabic (عربي), Brazilian Portuguese (Português brasileiro), Catalan, Chinese, Danish, Dutch, Finnish, French (Français), German (Deutsch), Greek, Hebrew, Hindi (हिंदी), Hungarian, Indonesian, Irish (Gaeilge), Italian (Italiano), Japanese, Korean, Malayalam, Myanmar (Burmese), Nepali (Nepalese), Norwegian (Norsk), Persian (فارسی), Polish, Punjabi (ਪੰਜਾਬੀ), Romanian, Russian, Slovak, Spanish (Español), Swedish, Thai, Turkish (Türkçe), and Vietnamese.
 
-## Customizing
+## Skins (color variations)
 
-You can edit `_config.yml` file to customize your blog. You can change things such as the name of the blog, the author, the appearance of the theme (light, dark or auto), how dates are formatted, etc. Customizable fields should be straightforward to understand. Still, `_config.yml` contains some comments to help you understand what each field does.
+This theme comes in nine different skins (in addition to the default one).
 
-For further customization (e.g. layout, CSS) see the [official Jekyll's documentation](https://jekyllrb.com/docs/themes/#overriding-theme-defaults) on customizing gem-based themes.
+| `air` | `contrast` | `dark` |
+| --- | --- | --- |
+| [![air skin](https://mmistakes.github.io/minimal-mistakes/assets/images/air-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/air-skin-archive-large.png) | [![contrast skin](https://mmistakes.github.io/minimal-mistakes/assets/images/contrast-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/contrast-skin-archive-large.png) | [![dark skin](https://mmistakes.github.io/minimal-mistakes/assets/images/dark-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/dark-skin-archive-large.png) |
 
-### Customize the menu
+| `dirt` | `mint` | `sunrise` |
+| --- | --- | --- |
+| [![dirt skin](https://mmistakes.github.io/minimal-mistakes/assets/images/dirt-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/dirt-skin-archive-large.png) | [![mint skin](https://mmistakes.github.io/minimal-mistakes/assets/images/mint-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/mint-skin-archive-large.png) | [![sunrise skin](https://mmistakes.github.io/minimal-mistakes/assets/images/sunrise-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/sunrise-skin-archive-large.png) |
 
-In order to add/edit/delete entries in the home page, you can copy the `home.yml` file inside `_data` folder. Through that file you can define the structure of the menu and add data for navbar, footer, portfolio or simply remove all of that and use simple blog layout. Take a look at the default configuration to get an idea of how it works and read on for a more comprehensive explaination.
+| `aqua` | `neon` | `plum` |
+| --- | --- | --- |
+| [![aqua skin](https://mmistakes.github.io/minimal-mistakes/assets/images/aqua-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/aqua-skin-archive-large.png) | [![neon skin](https://mmistakes.github.io/minimal-mistakes/assets/images/neon-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/neon-skin-archive-large.png) | [![plum skin](https://mmistakes.github.io/minimal-mistakes/assets/images/plum-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/plum-skin-archive-large.png) |
 
-The `home.yml` file accepts the following fields:
+## Demo pages
 
-1. Vertical list
-  - `entries` define a new unordered list that will contain menu entries
-  - each entry is marked by a `-` at the beginning of the line
-  - each entry has the following attributes:
-    - `title`, which defines the text to render for that menu entry
-    - `url`, which can either be a URL or `false`. If it is `false`, the entry will be rendered as plain text; otherwise the entry will be rendered as a link pointing to the specified URL. Note that the URL can either be relative or absolute.
-    - `post_list`, which can be `true` or `false`. If it is true, the entry will have all posts in the site as subentries. This is used to render your post list.
-    - `entries`, yes, you can have entries inside entries. In this way you can create nested sublists!
-2. Card list - cards are used to showcase portfolio projects. Please see `project_entries` in `_data/home.yml` file
-  - each entry is marked by a `-` at the beginning of the line
-  - each entry has the following attributes:
-    - `title` defines the header of the card
-    - `desc` is the body of the card
-    - `url` is a relative or absolute link which this card can point to.
-    - `highlight` in case you want to highlight something, keep the text short though
-3. Horizontal list - moonwalk uses horizontal lists to create navbar and footer. Please see `navbar_entries` and `footer_entries` in `data/home.yml` file
-  - each entry is marked by a `-` at the beginning of the line
-  - each entry has the following attributes:
-    - `title` defines the header of the card
-    - `url` is a relative or absolute link which this card can point to.
+| Name                                        | Description                                           |
+| ------------------------------------------- | ----------------------------------------------------- |
+| [Post with Header Image][header-image-post] | A post with a large header image. |
+| [HTML Tags and Formatting Post][html-tags-post] | A variety of common markup showing how the theme styles them. |
+| [Syntax Highlighting Post][syntax-post] | Post displaying highlighted code. |
+| [Post with a Gallery][gallery-post] | A post showing several images wrapped in `<figure>` elements. |
+| [Sample Collection Page][sample-collection] | Single page from a collection. |
+| [Categories Archive][categories-archive] | Posts grouped by category. |
+| [Tags Archive][tags-archive] | Posts grouped by tag. |
 
+Additional sample posts are available under [posts archive][year-archive] on the demo site. Source files for these (and the entire demo site) can be found in [`/docs`](docs).
 
-### Pro tips
-1. Moonwalk has 3 in-built layouts:
-  - post - for content
-  - blog - for listing blog posts
-  - home - for landing page
-  you can change your `index.md` file to use either home or blog layout.
+[header-image-post]: https://mmistakes.github.io/minimal-mistakes/layout-header-image-text-readability/
+[gallery-post]: https://mmistakes.github.io/minimal-mistakes/post%20formats/post-gallery/
+[html-tags-post]: https://mmistakes.github.io/minimal-mistakes/markup/markup-html-tags-and-formatting/
+[syntax-post]: https://mmistakes.github.io/minimal-mistakes/markup-syntax-highlighting/
+[sample-collection]: https://mmistakes.github.io/minimal-mistakes/recipes/chocolate-chip-cookies/
+[categories-archive]: https://mmistakes.github.io/minimal-mistakes/categories/
+[tags-archive]: https://mmistakes.github.io/minimal-mistakes/tags/
+[year-archive]: https://mmistakes.github.io/minimal-mistakes/year-archive/
 
-2. It is extremely easy to tweak the color scheme. 
-  - for light mode, customize these css variables
-```css
-html {
-    --bg: #fff;
-    --bg-secondary: #f8f9fa;
-    --headings: #000;
-    --text: #333;
-    --links: blue;
-    --highlight: #ffecb2; // light yellow
-}
-```
-  - for dark mode customize these css variables
-```css
-@mixin dark-appearance {
-  html, body  {
-      --bg: #1f242A;
-      --bg-secondary: #323945;
-      --headings: #3D9970;
-      --text: #adb5bd;
-      --links: #91a7ff;
-      --highlight: #ffd8a8;
-      --highlight: #ffd43b;
-  };
-}
-```
-3. Sign up for free on [Soopr](https://www.soopr.co) and add your `publish_token` in `_config.yml` file - with this, each page gets short URL, like button and auto generated share image for social media.
+## Installation
 
-<img src="https://raw.githubusercontent.com/abhinavs/moonwalk/master/_screenshots/twitter_card.png" />
+There are three ways to install: as a [gem-based theme](https://jekyllrb.com/docs/themes/#understanding-gem-based-themes), as a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/) (GitHub Pages compatible), or forking/directly copying all of the theme files into your project.
+
+### Gem-based method
+
+With Gem-based themes, directories such as the `assets`, `_layouts`, `_includes`, and `_sass` are stored in the theme’s gem, hidden from your immediate view. Yet all of the necessary directories will be read and processed during Jekyll’s build process.
+
+This allows for easier installation and updating as you don't have to manage any of the theme files. To install:
+
+1. Add the following to your `Gemfile`:
+
+   ```ruby
+   gem "minimal-mistakes-jekyll"
+   ```
+
+2. Fetch and update bundled gems by running the following [Bundler](http://bundler.io/) command:
+
+   ```bash
+   bundle
+   ```
+
+3. Set the `theme` in your project's Jekyll `_config.yml` file:
+
+   ```yaml
+   theme: minimal-mistakes-jekyll
+   ```
+
+To update the theme run `bundle update`.
+
+### Remote theme method
+
+Remote themes are similar to Gem-based themes, but do not require `Gemfile` changes or whitelisting making them ideal for sites hosted with GitHub Pages.
+
+To install:
+
+1. Create/replace the contents of your `Gemfile` with the following:
+
+   ```ruby
+   source "https://rubygems.org"
+
+   gem "github-pages", group: :jekyll_plugins
+   gem "jekyll-include-cache", group: :jekyll_plugins
+   ```
+
+2. Add `jekyll-include-cache` to the `plugins` array of your `_config.yml`.
+
+3. Fetch and update bundled gems by running the following [Bundler](http://bundler.io/) command:
+
+   ```bash
+   bundle
+   ```
+
+4. Add `remote_theme: "mmistakes/minimal-mistakes@4.24.0"` to your `_config.yml` file. Remove any other `theme:` or `remote_theme:` entry.
+
+**Looking for an example?** Use the [Minimal Mistakes remote theme starter](https://github.com/mmistakes/mm-github-pages-starter/generate) for the quickest method of getting a GitHub Pages hosted site up and running. Generate a new repository from the starter, replace sample content with your own, and configure as needed.
+
+## Usage
+
+For detailed instructions on how to configure, customize, add/migrate content, and more read the [theme's documentation](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
+
+---
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/abhinavs/moonwalk.
+Found a typo in the documentation or interested in [fixing a bug](https://github.com/mmistakes/minimal-mistakes/issues)? Then by all means [submit an issue](https://github.com/mmistakes/minimal-mistakes/issues/new) or [pull request](https://help.github.com/articles/using-pull-requests/). If this is your first pull request, it may be helpful to read up on the [GitHub Flow](https://guides.github.com/introduction/flow/) first.
+
+For help with using the theme or general Jekyll support questions, please use the [Jekyll Talk forums](https://talk.jekyllrb.com/).
+
+### Pull Requests
+
+When submitting a pull request:
+
+1. Clone the repo.
+2. Create a branch off of `master` and give it a meaningful name (e.g. `my-awesome-new-feature`).
+3. Open a pull request on GitHub and describe the feature or fix.
+
+Theme documentation and demo pages can be found in the [`/docs`](docs) if submitting improvements, typo corrections, etc.
 
 ## Development
 
 To set up your environment to develop this theme, run `bundle install`.
 
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+To test the theme, run `bundle exec rake preview` and open your browser at `http://localhost:4000/test/`. This starts a Jekyll server using content in the `test/` directory. As modifications are made to the theme and test site, it will regenerate and you should see the changes in the browser after a refresh.
 
-When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `moonwalk.gemspec` accordingly.
+---
 
-## Acknowledgement
-This theme's original base is [no style please!](https://github.com/riggraz/no-style-please) theme created by  [Riccardo Graziosi](https://riggraz.dev/) - many thanks to him for creating a wonderful theme with nearly no css. 
+## Credits
+
+### Creator
+
+**Michael Rose**
+
+- <https://mademistakes.com>
+- <https://twitter.com/mmistakes>
+- <https://github.com/mmistakes>
+
+### Icons + Demo Images:
+
+- [The Noun Project](https://thenounproject.com) -- Garrett Knoll, Arthur Shlain, and [tracy tam](https://thenounproject.com/tracytam)
+- [Font Awesome](http://fontawesome.io/)
+- [Unsplash](https://unsplash.com/)
+
+### Other:
+
+- [Jekyll](http://jekyllrb.com/)
+- [jQuery](http://jquery.com/)
+- [Susy](http://susy.oddbird.net/)
+- [Breakpoint](http://breakpoint-sass.com/)
+- [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/)
+- [FitVids.JS](http://fitvidsjs.com/)
+- [GreedyNav.js](https://github.com/lukejacksonn/GreedyNav)
+- [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
+- [Gumshoe](https://github.com/cferdinandi/gumshoe)
+- [jQuery throttle / debounce](http://benalman.com/projects/jquery-throttle-debounce-plugin/)
+- [Lunr](http://lunrjs.com)
+
+---
 
 ## License
 
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+The MIT License (MIT)
 
-## Other Projects
-If you like Moonwalk, do check out my other projects
-*   [cookie](https://github.com/abhinavs/cookie) - a free landing website boilerplate using Jekyll and Tailwind CSS
-*   [scoop](https://github.com/abhinavs/scoop) - a Sinatra boilerplate project using Corneal, ActiveRecord, Capistrano, Puma & Nginx
-*   [soopr](https://www.soopr.co) - a tool that supports you in content marketing
-*   [apicagent](https://www.apicagent.com) - a FREE API that extracts device details from user-agent string
-*   [pincodr](https://pincodr.apiclabs.com) - a FREE API for Indian pincodes
-*   [humangous](https://www.humangous.co) - create public and private 'working with you' guides
-*   [blockr](https://www.abhinav.co/blockr) - a CLI tool to help you easily block and unblock websites
-*   [microrequests](https://www.abhinav.co/microrequests) - a Python library to help you consume microservice efficiently
+Copyright (c) 2013-2020 Michael Rose and contributors
 
-✨⚡You can read more about me on my [blog](https://www.abhinav.co/about/) or follow me on Twitter - [@abhinav](https://twitter.com/abhinav)
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-✨⚡If you like my work, you can [buy me a coffee](https://buymeacoffee.com/abhinavs)                
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Minimal Mistakes incorporates icons from [The Noun Project](https://thenounproject.com/) 
+creators Garrett Knoll, Arthur Shlain, and tracy tam.
+Icons are distributed under Creative Commons Attribution 3.0 United States (CC BY 3.0 US).
+
+Minimal Mistakes incorporates [Font Awesome](http://fontawesome.io/),
+Copyright (c) 2017 Dave Gandy.
+Font Awesome is distributed under the terms of the [SIL OFL 1.1](http://scripts.sil.org/OFL) 
+and [MIT License](http://opensource.org/licenses/MIT).
+
+Minimal Mistakes incorporates photographs from [Unsplash](https://unsplash.com).
+
+Minimal Mistakes incorporates [Susy](http://susy.oddbird.net/),
+Copyright (c) 2017, Miriam Eric Suzanne.
+Susy is distributed under the terms of the [BSD 3-clause "New" or "Revised" License](https://opensource.org/licenses/BSD-3-Clause).
+
+Minimal Mistakes incorporates [Breakpoint](http://breakpoint-sass.com/).
+Breakpoint is distributed under the terms of the [MIT/GPL Licenses](http://opensource.org/licenses/MIT).
+
+Minimal Mistakes incorporates [FitVids.js](https://github.com/davatron5000/FitVids.js/),
+Copyright (c) 2013 Dave Rubert and Chris Coyier.
+FitVids is distributed under the terms of the [WTFPL License](http://www.wtfpl.net/).
+
+Minimal Mistakes incorporates [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/),
+Copyright (c) 2014-2016 Dmitry Semenov, http://dimsemenov.com.
+Magnific Popup is distributed under the terms of the MIT License.
+
+Minimal Mistakes incorporates [Smooth Scroll](http://github.com/cferdinandi/smooth-scroll),
+Copyright (c) 2019 Chris Ferdinandi.
+Smooth Scroll is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+
+Minimal Mistakes incorporates [Gumshoejs](http://github.com/cferdinandi/gumshoe),
+Copyright (c) 2019 Chris Ferdinandi.
+Gumshoejs is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+
+Minimal Mistakes incorporates [jQuery throttle / debounce](http://benalman.com/projects/jquery-throttle-debounce-plugin/),
+Copyright (c) 2010 "Cowboy" Ben Alman.
+jQuery throttle / debounce is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+
+Minimal Mistakes incorporates [GreedyNav.js](https://github.com/lukejacksonn/GreedyNav),
+Copyright (c) 2015 Luke Jackson.
+GreedyNav.js is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+
+Minimal Mistakes incorporates [Jekyll Group-By-Array](https://github.com/mushishi78/jekyll-group-by-array),
+Copyright (c) 2015 Max White <mushishi78@gmail.com>.
+Jekyll Group-By-Array is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+
+Minimal Mistakes incorporates [@allejo's Pure Liquid Jekyll Table of Contents](https://allejo.io/blog/a-jekyll-toc-in-liquid-only/),
+Copyright (c) 2017 Vladimir Jimenez.
+Pure Liquid Jekyll Table of Contents is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+
+Minimal Mistakes incorporates [Lunr](http://lunrjs.com),
+Copyright (c) 2018 Oliver Nightingale.
+Lunr is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
