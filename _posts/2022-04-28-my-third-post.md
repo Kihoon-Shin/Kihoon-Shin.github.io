@@ -25,7 +25,6 @@ Nvidia T1200<br>
 >chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://download.lenovo.com/pccbbs/mobiles_pdf/tp_p15_p17_p1_gen3_ubuntu_20.04_lts_installation_v1.0.pdf
 
 #### Second trial
-To get the system boot:
 - 위에서 레노버 공식 사이트 가이드 따라한 뒤 18.04.6 설치
 - Black Screen에서 stuck
 > Solution : https://www.stephenwagner.com/2019/05/05/ubuntu-linux-black-screen-frozen-system-after-upgrade-install/
