@@ -55,3 +55,7 @@ GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nomodeset"
 update-grub
 ```
 7. 시스템을 다시 시작한다
+
+## Nvidia Driver 설치
+Ubuntu 18.04 설치 후 Nvidia Driver를 설치하려 시도했지만 470 Driver를 설치하면 Black Screen발생. 구글링 결과 Thinkpad P15v에서는 공식적으로 20.04 버전이 사용된다고 한다.  
+20.04를 설치하자
