@@ -103,7 +103,7 @@ analytics:
 # Site Author
 author:
   name             : "Gihun"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : /assets/images/main.jpg
   bio              : "Inha Univ."
   location         : "Incheon"
   email            :
