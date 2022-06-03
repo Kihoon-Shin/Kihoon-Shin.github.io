@@ -103,7 +103,7 @@ analytics:
 # Site Author
 author:
   name             : "Gihun"
-  avatar           : /assets/images/main.jpg
+  avatar           : # /assets/images/main.jpg
   bio              : "Inha Univ."
   location         : "Incheon"
   email            :
